@@ -60,7 +60,7 @@ class Raytracer:
             l = self.scene.light.get_l()
             n_dot_l = np.clip(np.dot(n, l), 0, 1)
             ambient = 0.2
-            color = (n_dot_l + ambient) * min_obj.color
+            color = np.clip((n_dot_l + ambient) * min_obj.color, 0, 1)
         else:
             color = np.zeros(COLOR_CHANNELS)
         return color

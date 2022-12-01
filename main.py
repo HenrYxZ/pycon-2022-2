@@ -10,9 +10,9 @@ from scene import Scene, Sphere
 
 rng = np.random.default_rng()
 COLORS = [
-    rng.random(COLOR_CHANNELS),
-    rng.random(COLOR_CHANNELS),
-    rng.random(COLOR_CHANNELS)
+    np.array([128 / 255, 0, 128 / 255]),
+    np.array([250 / 255, 0, 0]),
+    np.array([0, 0, 250 / 255])
 ]
 RS = [0.8, 0.2, 0.3]
 POS = [
