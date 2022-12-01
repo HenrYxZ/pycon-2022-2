@@ -14,25 +14,27 @@ COLORS = [
     rng.random(COLOR_CHANNELS),
     rng.random(COLOR_CHANNELS)
 ]
-RS = [0.5, 0.2, 0.3]
+RS = [0.8, 0.2, 0.3]
 POS = [
     np.array([0.0, 0.0, 3.0]),
-    np.array([-0.3, 0.0, 2.0]),
-    np.array([1.2, 0.0, 1.7])
+    np.array([-0.3, -0.05, 2.0]),
+    np.array([0.55, 0.2, 1.7])
 ]
 
-WIDTH = 288
-HEIGHT = 192
+SCREEN_SCALE = 3
+WIDTH = 288 * SCREEN_SCALE
+HEIGHT = 192 * SCREEN_SCALE
 
 
 def main():
     # Create a Camera
+    cam_pos = np.array([0.0, 0.0, 0.0])
     v_view = np.array([0.0, 0.0, 1.0])
     v_up = np.array([0.0, 1.0, 0.0])
     sx = 35
     sy = 24
     d = 26
-    camera = Camera(v_view, v_up, sx, sy, d)
+    camera = Camera(cam_pos, v_view, v_up, sx, sy, d)
 
     # Create a Scene
     scene = Scene()

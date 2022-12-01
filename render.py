@@ -21,7 +21,7 @@ def render(scene: Scene, camera: Camera, width: int, height: int) -> np.ndarray:
     for j in range(height):
         for i in range(width):
             color = raytracer.compute_color(j, i)
-            arr[j, i] = utils.convert_to_rgb(color)
+            arr[j][i] = utils.convert_to_rgb(color)
         # show progress for a completed row
         bar.next()
     bar.finish()
