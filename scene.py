@@ -27,5 +27,5 @@ class Sphere:
     color: np.ndarray
 
     def normal_at(self, p: np.ndarray):
-        # TODO: calculate normal
-        raise Exception("Normals for Sphere not implemented")
+        n = utils.normalize(p - self.pos)
+        return n
