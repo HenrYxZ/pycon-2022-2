@@ -2,13 +2,11 @@ import numpy as np
 from PIL import Image
 
 
-from constants import *
 from camera import Camera
 from render import render
 from scene import Scene, Sphere
 
 
-rng = np.random.default_rng()
 COLORS = [
     np.array([128 / 255, 0, 128 / 255]),
     np.array([250 / 255, 0, 0]),

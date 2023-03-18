@@ -3,6 +3,7 @@
 Talk about implementing Raytracing with numpy for PyCon Chile 2022.
 Based on the tutorial "Raytracing para todos".
 
+[Link to video presentation](https://www.youtube.com/watch?v=SyfSvvyfP8Q)
 [Link to tutorial](https://sombra.studio/raytracing-para-todos)
 
 
